@@ -49,7 +49,7 @@ else
 	RNM = 0
 end
 database:select(RNM)
-local Token = database:get("Bot:Token") or tostring(_redis.Token)
+local Token = database:get("201708277:AAFq91Zus2uCVqQoXG6RTnBHCSQVcsd8YdA") or tostring(_redis.Token)
 local url = "https://api.telegram.org/bot" .. Token
 local load_config = function()
 	local f = io.open("./Config.lua", "r")
